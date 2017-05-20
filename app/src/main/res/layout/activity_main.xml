@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.android.flaccoquiz.MainActivity">
+
+    <TextView
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Who has the record for the most starts in an NFL rookie season?" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/flacco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joe Flacco"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/luck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Andrew Luck"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/aRod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aaron Rodgers"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/marino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dan Marino"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+
+    <TextView
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What quarterbacks hold the record for most touchdown passes in the postseason without an interception?"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/brady_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tom Brady"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/warner_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kurt Warner"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/montana_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joe Montana"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/flacco_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joe Flacco"
+            android:onClick="onCheckboxClicked"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Who was the 2012 NFL Super Bowl MVP?"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sbmvp_field"
+        android:inputType="text"
+        android:backgroundTint="@android:color/darker_gray"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What team Drafted Joe Flacco?"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/draft_field"
+        android:hint="name"
+        android:backgroundTint="@android:color/darker_gray"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Submit"
+        android:onClick="gradeQuiz"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
